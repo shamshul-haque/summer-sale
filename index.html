@@ -346,7 +346,6 @@
             </div>
           </div>
         </div>
-
         <!-- calculation cart -->
         <div class="md:mt-14 space-y-5">
           <!-- discount coupon -->
@@ -359,10 +358,12 @@
                 type="text"
                 id=""
                 placeholder="Coupon code"
-                class="w-[90%] p-2 border rounded-md outline-0 text-sm"
+                disabled
+                class="w-full p-3 border rounded-md outline-0"
               />
               <button
-                class="text-white bg-[#E527B2] px-3 py-2 rounded-r-md -ml-10"
+                class="text-white bg-[#E527B2] px-3 py-2 rounded-r-md -ml-10 disabled:bg-pink-300"
+                disabled
               >
                 Apply
               </button>
@@ -394,10 +395,43 @@
             </div>
             <hr />
 
-            <!-- purchase button -->
-            <button class="text-white bg-[#E527B2] px-3 py-2 rounded-md w-full">
-              Make Purchase
-            </button>
+            <!-- purchase button with success modal -->
+            <div class="pt-3">
+              <button
+                onclick="modal.showModal()"
+                class="text-lg text-white bg-[#E527B2] py-2 rounded-md disabled:bg-pink-300 w-full"
+                disabled
+              >
+                Make Purchase
+              </button>
+
+              <dialog id="modal" class="modal">
+                <form method="dialog" class="modal-box py-10">
+                  <img
+                    src="./images/congo.png"
+                    alt="congo"
+                    class="mx-auto w-24 mb-5"
+                  />
+                  <h3
+                    class="text-black text-2xl md:text-4xl font-bold text-center"
+                  >
+                    Congratulations
+                  </h3>
+                  <p
+                    class="text-gray-400 text-sm lg:text-base font-normal text-center"
+                  >
+                    Your Purchase successful
+                  </p>
+                  <div class="modal-action flex justify-center">
+                    <button
+                      class="text-white bg-[#E527B2] px-3 py-2 rounded-md text-lg"
+                    >
+                      Go Home
+                    </button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
           </div>
         </div>
       </section>
@@ -405,7 +439,7 @@
 
     <!-- footer section -->
     <footer class="bg-yellow-50 px-10 lg:px-20">
-      <div
+      <section
         class="flex flex-col md:flex-row gap-5 items-center md:justify-between text-black py-5 font-workSans"
       >
         <!-- footer content -->
@@ -468,7 +502,7 @@
               ></path></svg
           ></a>
         </div>
-      </div>
+      </section>
     </footer>
 
     <!-- script files -->
