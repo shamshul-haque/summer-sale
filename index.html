@@ -375,12 +375,13 @@
             <div class="flex">
               <input
                 type="text"
-                id=""
+                id="coupon-field"
                 placeholder="Coupon code"
                 disabled
                 class="w-full p-3 border rounded-md outline-0"
               />
               <button
+                id="apply-btn"
                 class="text-white bg-[#E527B2] px-3 py-2 rounded-r-md -ml-10 disabled:bg-pink-300"
                 disabled
               >
@@ -421,6 +422,7 @@
             <!-- purchase button with success modal -->
             <div class="pt-3">
               <button
+                id="purchase-btn"
                 onclick="modal.showModal()"
                 class="text-lg text-white bg-[#E527B2] py-2 rounded-md disabled:bg-pink-300 w-full"
                 disabled
