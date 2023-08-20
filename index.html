@@ -82,7 +82,7 @@
             <!-- products container -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               <!-- product-1 -->
-              <div class="bg-white rounded-md shadow-md">
+              <div onclick="product1()" class="bg-white rounded-md shadow-md">
                 <!-- product-1 image -->
                 <div class="bg-gray-200 m-5 rounded-md">
                   <img
@@ -104,12 +104,14 @@
                   <h2 class="text-xl text-black font-semibold">
                     K. Accessories
                   </h2>
-                  <p class="text-base text-gray-400"><span>39.00</span> TK</p>
+                  <p class="text-base text-gray-400">
+                    <span id="p1-price">39.00</span> TK
+                  </p>
                 </div>
               </div>
 
               <!-- product-2 -->
-              <div class="bg-white rounded-md shadow-md">
+              <div onclick="product2()" class="bg-white rounded-md shadow-md">
                 <!-- product-2 image -->
                 <div class="bg-gray-200 m-5 rounded-md snap-center">
                   <img
@@ -131,12 +133,14 @@
                   <h2 class="text-xl text-black font-semibold">
                     K. Accessories
                   </h2>
-                  <p class="text-base text-gray-400"><span>25.00</span> TK</p>
+                  <p id="p2-price" class="text-base text-gray-400">
+                    <span id="p2-price">25.00</span> TK
+                  </p>
                 </div>
               </div>
 
               <!-- product-3 -->
-              <div class="bg-white rounded-md shadow-md">
+              <div onclick="product3()" class="bg-white rounded-md shadow-md">
                 <!-- product-3 image -->
                 <div class="bg-gray-200 m-5 rounded-md snap-center">
                   <img
@@ -156,7 +160,9 @@
                     <i class="fa-regular fa-star"></i>
                   </div>
                   <h2 class="text-xl text-black font-semibold">Home Cooker</h2>
-                  <p class="text-base text-gray-400"><span>49.00</span> TK</p>
+                  <p class="text-base text-gray-400">
+                    <span id="p3-price">49.00</span> TK
+                  </p>
                 </div>
               </div>
             </div>
@@ -173,7 +179,7 @@
             <!-- products container -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               <!-- product-4 -->
-              <div class="bg-white rounded-md shadow-md">
+              <div onclick="product4()" class="bg-white rounded-md shadow-md">
                 <!-- product-4 image -->
                 <div class="bg-gray-200 m-5 rounded-md">
                   <img
@@ -195,12 +201,14 @@
                   <h2 class="text-xl text-black font-semibold">
                     Sports Back Cap
                   </h2>
-                  <p class="text-base text-gray-400"><span>49.00</span> TK</p>
+                  <p id="p4-price" class="text-base text-gray-400">
+                    <span>49.00</span> TK
+                  </p>
                 </div>
               </div>
 
               <!-- product-5 -->
-              <div class="bg-white rounded-md shadow-md">
+              <div onclick="product5()" class="bg-white rounded-md shadow-md">
                 <!-- product-5 image -->
                 <div class="bg-gray-200 m-5 rounded-md snap-center">
                   <img
@@ -222,12 +230,14 @@
                   <h2 class="text-xl text-black font-semibold">
                     Full Jersey Set
                   </h2>
-                  <p class="text-base text-gray-400"><span>69.00</span> TK</p>
+                  <p class="text-base text-gray-400">
+                    <span id="p5-price">69.00</span> TK
+                  </p>
                 </div>
               </div>
 
               <!-- product-6 -->
-              <div class="bg-white rounded-md shadow-md">
+              <div onclick="product6()" class="bg-white rounded-md shadow-md">
                 <!-- product-6 image -->
                 <div class="bg-gray-200 m-5 rounded-md snap-center">
                   <img
@@ -247,7 +257,9 @@
                     <i class="fa-regular fa-star"></i>
                   </div>
                   <h2 class="text-xl text-black font-semibold">Sports cates</h2>
-                  <p class="text-base text-gray-400"><span>159.00</span> TK</p>
+                  <p class="text-base text-gray-400">
+                    <span id="p6-price">159.00</span> TK
+                  </p>
                 </div>
               </div>
             </div>
@@ -258,13 +270,13 @@
             <h1
               class="text-2xl md:text-4xl font-semibold text-black mb-4 mt-10"
             >
-              Sportswear
+              Furniture
             </h1>
 
             <!-- products container -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               <!-- product-7 -->
-              <div class="bg-white rounded-md shadow-md">
+              <div onclick="product7()" class="bg-white rounded-md shadow-md">
                 <!-- product-7 image -->
                 <div class="bg-gray-200 m-5 rounded-md">
                   <img
@@ -284,14 +296,16 @@
                     <i class="fa-regular fa-star"></i>
                   </div>
                   <h2 class="text-xl text-black font-semibold">
-                    Sports Back Cap
+                    Single Relax Chair
                   </h2>
-                  <p class="text-base text-gray-400"><span>185.00</span> TK</p>
+                  <p class="text-base text-gray-400">
+                    <span id="p7-price">185.00</span> TK
+                  </p>
                 </div>
               </div>
 
               <!-- product-8 -->
-              <div class="bg-white rounded-md shadow-md">
+              <div onclick="product8()" class="bg-white rounded-md shadow-md">
                 <!-- product-8 image -->
                 <div class="bg-gray-200 m-5 rounded-md snap-center">
                   <img
@@ -313,12 +327,14 @@
                   <h2 class="text-xl text-black font-semibold">
                     Children play
                   </h2>
-                  <p class="text-base text-gray-400"><span>299.00</span> TK</p>
+                  <p class="text-base text-gray-400">
+                    <span id="p8-price">299.00</span> TK
+                  </p>
                 </div>
               </div>
 
               <!-- product-9 -->
-              <div class="bg-white rounded-md shadow-md">
+              <div onclick="product9()" class="bg-white rounded-md shadow-md">
                 <!-- product-9 image -->
                 <div class="bg-gray-200 m-5 rounded-md snap-center">
                   <img
@@ -340,12 +356,15 @@
                   <h2 class="text-xl text-black font-semibold">
                     Flexible Sofas
                   </h2>
-                  <p class="text-base text-gray-400"><span>339.00</span> TK</p>
+                  <p class="text-base text-gray-400">
+                    <span id="p9-price">339.00</span> TK
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <!-- calculation cart -->
         <div class="md:mt-14 space-y-5">
           <!-- discount coupon -->
@@ -379,19 +398,23 @@
               <h1 class="text-lg font-medium underline">
                 Your Selected Items:
               </h1>
-              <!-- <p></p> -->
+              <ul id="title">
+                <!-- selected list will set here -->
+              </ul>
             </div>
 
             <!-- calculated price -->
             <hr />
             <div>
               <h1 class="text-lg font-medium">
-                Total Price: <span>00.00</span> TK
+                Total Price: <span id="total-price">00.00</span> TK
               </h1>
               <h1 class="text-lg font-medium">
-                Discount: <span>00.00</span> TK
+                Discount: <span id="discount">00.00</span> TK
               </h1>
-              <h1 class="text-lg font-medium">Total: <span>00.00</span> TK</h1>
+              <h1 class="text-lg font-medium">
+                Total: <span id="mega-total">00.00</span> TK
+              </h1>
             </div>
             <hr />
 
