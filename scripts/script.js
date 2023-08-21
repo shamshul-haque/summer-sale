@@ -103,7 +103,7 @@ function setPrice(elementId, value) {
   totalPrice.innerText = value.toFixed(2);
 }
 
-// set validation
+// check validation and update value
 function checkValidation(price) {
   setPrice("total-price", price);
   setPrice("mega-total", price);
@@ -113,25 +113,19 @@ function checkValidation(price) {
     purchaseBtn.removeAttribute("disabled");
   }
 
+  const applyBtn = document.getElementById("apply-btn");
+  const couponField = document.getElementById("coupon-field");
   if (price >= 200) {
-    const couponField = document.getElementById("coupon-field");
-    couponField.removeAttribute("disabled");
-    couponField.addEventListener("keyup", function (e) {
-      const couponCode = e.target.value;
-      const applyBtn = document.getElementById("apply-btn");
-      if (couponCode === "SELL200") {
-        applyBtn.removeAttribute("disabled");
-        applyBtn.addEventListener("click", function () {
-          const discount = (20 / 100) * price;
-          setPrice("discount", discount);
-          const total = price - discount;
-          setPrice("mega-total", total);
-          couponField.value = "";
-          couponField.setAttribute("disabled", true);
-          applyBtn.setAttribute("disabled", true);
-        });
+    applyBtn.removeAttribute("disabled");
+    applyBtn.addEventListener("click", function () {
+      if (couponField.value === "SELL200") {
+        const discount = (20 / 100) * price;
+        setPrice("discount", discount);
+        const total = price - discount;
+        setPrice("mega-total", total);
+        couponField.value = "";
       } else {
-        applyBtn.setAttribute("disabled", true);
+        return alert("Your coupon code is invalid!");
       }
     });
   }
@@ -139,9 +133,10 @@ function checkValidation(price) {
   document.getElementById("go-home").addEventListener("click", function () {
     price = 0;
     setPrice("total-price", price);
-    setPrice("mega-total", price);
     setPrice("discount", price);
+    setPrice("mega-total", price);
     purchaseBtn.setAttribute("disabled", true);
+    applyBtn.setAttribute("disabled", true);
     title.innerHTML = "";
   });
 }
