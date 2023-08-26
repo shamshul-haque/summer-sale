@@ -1,2 +1,2 @@
 # To see the live project, click bellow...
-[shams-summer-sale.surge.sh].
+[Click Here!](shams-summer-sale.surge.sh).
