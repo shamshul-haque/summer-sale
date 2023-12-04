@@ -1,2 +1,2 @@
-# To see the live project, copy the bellow link and open it in any browser...
-`shams-summer-sale.surge.sh`
+# Nexify
+Click here to see the project: [nexify](https://shams-summer-sale.surge.sh/)
