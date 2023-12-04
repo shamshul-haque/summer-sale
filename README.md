@@ -1,2 +1,2 @@
-# Nexify
-Click here to see the project: [nexify](https://shams-summer-sale.surge.sh/)
+# Summer Sale
+Click here to see the project: [summer-sale](https://shams-summer-sale.surge.sh/)
